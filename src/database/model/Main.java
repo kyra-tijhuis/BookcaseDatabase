@@ -1,6 +1,7 @@
 package database.model;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -27,10 +28,15 @@ public class Main {
         book.setThickness(20);
         book.setCover(null);
 
+        BookDetails details = new BookDetails();
+        details.setBook(book);
+        details.setOrientation(Orientation.SPINE);
+
         Plank plank = new Plank();
         plank.setBooks(new ArrayList<>());
-        plank.getBooks().add(book);
-//        plank.getBooks().add(book);
+        plank.getBooks().add(details);
+        details.setPlank(plank);
+        details.setIndex(0);
         plank.setHeight(300);
 
         Bookcase bookcase = new Bookcase();

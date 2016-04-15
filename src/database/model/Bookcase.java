@@ -3,6 +3,7 @@ package database.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public class Bookcase {
     private String bookcaseName;
     private int bookcaseID;
     private int width;
-    private List<Plank> planks;
+    private Collection<Plank> planks;
 
     public String getBookcaseName() {
         return bookcaseName;
@@ -43,11 +44,11 @@ public class Bookcase {
     }
 
     @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = Plank.class)
-    public List<Plank> getPlanks() {
+    public Collection<Plank> getPlanks() {
         return planks;
     }
 
-    public void setPlanks(List<Plank> planks) {
+    public void setPlanks(Collection<Plank> planks) {
         this.planks = planks;
     }
 

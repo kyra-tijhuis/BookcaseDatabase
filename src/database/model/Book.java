@@ -86,23 +86,20 @@ public class Book {
         if (height != book.height) return false;
         if (width != book.width) return false;
         if (thickness != book.thickness) return false;
-        if (isbn != null ? !isbn.equals(book.isbn) : book.isbn != null) return false;
-        if (bookTitle != null ? !bookTitle.equals(book.bookTitle) : book.bookTitle != null) return false;
-        if (author != null ? !author.equals(book.author) : book.author != null) return false;
-        if (cover!= null ? !cover.equals(book.cover) : book.cover != null) return false;
+        if (!isbn.equals(book.isbn)) return false;
+        if (!bookTitle.equals(book.bookTitle)) return false;
+        return author.equals(book.author);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
-        int result = isbn != null ? isbn.hashCode() : 0;
-        result = 31 * result + (bookTitle != null ? bookTitle.hashCode() : 0);
-        result = 31 * result + (author != null ? author.hashCode() : 0);
+        int result = isbn.hashCode();
+        result = 31 * result + bookTitle.hashCode();
+        result = 31 * result + author.hashCode();
         result = 31 * result + height;
         result = 31 * result + width;
         result = 31 * result + thickness;
-        result = 31 * result + (cover != null ? cover.hashCode() : 0);
         return result;
     }
 }

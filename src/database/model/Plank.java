@@ -3,6 +3,7 @@ package database.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -10,20 +11,10 @@ import java.util.List;
  */
 @Entity
 public class Plank {
-//
-//    private Bookcase bookcase;
     private int plankId;
     private int height;
-    private List<Book> books;
+    private Collection<BookDetails> books;
 
-//    @ManyToOne
-//    public Bookcase getBookcase() {
-//        return bookcase;
-//    }
-//
-//    public void setBookcase(Bookcase bookcase) {
-//        this.bookcase = bookcase;
-//    }
 
     @Id
     @GeneratedValue(generator="increment")
@@ -44,12 +35,12 @@ public class Plank {
         this.height = height;
     }
 
-    @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = Book.class)
-    public List<Book> getBooks() {
+    @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = BookDetails.class)
+    public Collection<BookDetails> getBooks() {
         return books;
     }
 
-    public void setBooks(List<Book> books) {
+    public void setBooks(Collection<BookDetails> books) {
         this.books = books;
     }
 
@@ -61,7 +52,6 @@ public class Plank {
         Plank plank = (Plank) o;
 
         if (plankId != plank.plankId) return false;
-        if (height != plank.height) return false;
         return books != null ? books.equals(plank.books) : plank.books == null;
 
     }
@@ -69,7 +59,6 @@ public class Plank {
     @Override
     public int hashCode() {
         int result = plankId;
-        result = 31 * result + height;
         result = 31 * result + (books != null ? books.hashCode() : 0);
         return result;
     }

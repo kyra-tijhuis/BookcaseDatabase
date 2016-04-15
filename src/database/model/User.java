@@ -3,6 +3,7 @@ package database.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -14,7 +15,7 @@ public class User {
     private String userName;
     private String passwordHash;
     private String salt;
-    private List<Bookcase> bookcases;
+    private Collection<Bookcase> bookcases;
 
     @Id
     @GeneratedValue(generator = "increment")
@@ -53,11 +54,11 @@ public class User {
     }
 
     @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = Bookcase.class)
-    public List<Bookcase> getBookcases() {
+    public Collection<Bookcase> getBookcases() {
         return bookcases;
     }
 
-    public void setBookcases(List<Bookcase> bookcases) {
+    public void setBookcases(Collection<Bookcase> bookcases) {
         this.bookcases = bookcases;
     }
 
@@ -76,19 +77,18 @@ public class User {
         User user = (User) o;
 
         if (userID != user.userID) return false;
-        if (userName != null ? !userName.equals(user.userName) : user.userName != null) return false;
-        if (passwordHash != null ? !passwordHash.equals(user.passwordHash) : user.passwordHash != null) return false;
-        if (salt != null ? !salt.equals(user.salt) : user.salt != null) return false;
+        if (!userName.equals(user.userName)) return false;
+        if (!passwordHash.equals(user.passwordHash)) return false;
+        return salt.equals(user.salt);
 
-        return true;
     }
 
     @Override
     public int hashCode() {
         int result = userID;
-        result = 31 * result + (userName != null ? userName.hashCode() : 0);
-        result = 31 * result + (passwordHash != null ? passwordHash.hashCode() : 0);
-        result = 31 * result + (salt != null ? salt.hashCode() : 0);
+        result = 31 * result + userName.hashCode();
+        result = 31 * result + passwordHash.hashCode();
+        result = 31 * result + salt.hashCode();
         return result;
     }
 }
