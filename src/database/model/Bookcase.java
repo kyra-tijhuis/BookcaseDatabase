@@ -43,7 +43,7 @@ public class Bookcase {
         this.width = width;
     }
 
-    @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = Plank.class)
+    @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true, targetEntity = Plank.class)
     public Collection<Plank> getPlanks() {
         return planks;
     }
@@ -60,18 +60,14 @@ public class Bookcase {
         Bookcase bookcase = (Bookcase) o;
 
         if (bookcaseID != bookcase.bookcaseID) return false;
-        if (width != bookcase.width) return false;
-        if (bookcaseName != null ? !bookcaseName.equals(bookcase.bookcaseName) : bookcase.bookcaseName != null)
-            return false;
+        return planks != null ? planks.equals(bookcase.planks) : bookcase.planks == null;
 
-        return true;
     }
 
     @Override
     public int hashCode() {
-        int result = bookcaseName != null ? bookcaseName.hashCode() : 0;
-        result = 31 * result + bookcaseID;
-        result = 31 * result + width;
+        int result = bookcaseID;
+        result = 31 * result + (planks != null ? planks.hashCode() : 0);
         return result;
     }
 }

@@ -53,7 +53,7 @@ public class User {
         this.salt = salt;
     }
 
-    @OneToMany(cascade = {CascadeType.REMOVE}, orphanRemoval = true, targetEntity = Bookcase.class)
+    @OneToMany(cascade = {CascadeType.ALL}, orphanRemoval = true, targetEntity = Bookcase.class)
     public Collection<Bookcase> getBookcases() {
         return bookcases;
     }

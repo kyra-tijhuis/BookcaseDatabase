@@ -16,6 +16,7 @@ public class BookDetails {
     private int index;
     private Plank plank;
 
+    @Id
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     public int getBookID() {
@@ -44,7 +45,6 @@ public class BookDetails {
         this.orientation = orientation;
     }
 
-    @Id
     public int getIndex() {
         return index;
     }
@@ -53,8 +53,8 @@ public class BookDetails {
         this.index = index;
     }
 
-    @Id
-    @ManyToOne
+    @ManyToOne(targetEntity = Plank.class,cascade = {CascadeType.ALL})
+    @JoinColumn(name = "plankID")
     public Plank getPlank() {
         return plank;
     }

@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93fa5f82-d02f-486c-948a-c52b68a11853" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/dao/PlankDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/model/BookDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/database/model/Orientation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/dao/BookDAO.java" afterPath="$PROJECT_DIR$/src/database/dao/BookDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/Book.java" afterPath="$PROJECT_DIR$/src/database/model/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Book.class" afterPath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Relaties demo/database/model/BookDetails.class" afterPath="$PROJECT_DIR$/out/production/Relaties demo/database/model/BookDetails.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Bookcase.class" afterPath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Bookcase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Plank.class" afterPath="$PROJECT_DIR$/out/production/Relaties demo/database/model/Plank.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Relaties demo/database/model/User.class" afterPath="$PROJECT_DIR$/out/production/Relaties demo/database/model/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/BookDetails.java" afterPath="$PROJECT_DIR$/src/database/model/BookDetails.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/Bookcase.java" afterPath="$PROJECT_DIR$/src/database/model/Bookcase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/Main.java" afterPath="$PROJECT_DIR$/src/database/model/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/Plank.java" afterPath="$PROJECT_DIR$/src/database/model/Plank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/database/model/User.java" afterPath="$PROJECT_DIR$/src/database/model/User.java" />
     </list>
@@ -37,11 +38,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+          <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="374">
+                  <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -50,7 +51,7 @@
           <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/model/Book.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
+                <state relative-caret-position="1473">
                   <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
                   <folding />
                 </state>
@@ -60,18 +61,18 @@
           <file leaf-file-name="Plank.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/model/Plank.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="505">
-                  <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+                <state relative-caret-position="373">
+                  <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/model/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+                <state relative-caret-position="572">
+                  <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -80,8 +81,8 @@
           <file leaf-file-name="BookDetails.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/model/BookDetails.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="241">
-                  <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+                <state relative-caret-position="526">
+                  <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -150,21 +151,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/database/model/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="902">
-                  <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+                <state relative-caret-position="637">
+                  <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Bookcase.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Bookcase.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/database/model/Bookcase.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+                <state relative-caret-position="682">
+                  <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
                   <folding />
                 </state>
               </provider>
@@ -209,12 +210,13 @@
         <option value="$PROJECT_DIR$/src/database/dao/DAOTester.java" />
         <option value="$PROJECT_DIR$/src/database/dao/BookDAO.java" />
         <option value="$PROJECT_DIR$/src/database/model/Orientation.java" />
-        <option value="$PROJECT_DIR$/src/database/model/Bookcase.java" />
         <option value="$PROJECT_DIR$/src/database/model/Main.java" />
-        <option value="$PROJECT_DIR$/src/database/model/BookDetails.java" />
         <option value="$PROJECT_DIR$/src/database/model/Book.java" />
+        <option value="$PROJECT_DIR$/src/database/model/Bookcase.java" />
         <option value="$PROJECT_DIR$/src/database/model/Plank.java" />
         <option value="$PROJECT_DIR$/src/database/model/User.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/database/model/BookDetails.java" />
       </list>
     </option>
   </component>
@@ -787,16 +789,16 @@
       <updated>1460724095515</updated>
       <workItem from="1460724100031" duration="130000" />
       <workItem from="1460724254592" duration="38000" />
-      <workItem from="1460724633529" duration="5760000" />
+      <workItem from="1460724633529" duration="6629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5928000" />
+    <option name="totallyTimeSpent" value="6797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2391" y="-9" width="2418" height="1331" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -807,7 +809,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32999164" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32999164" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -915,14 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/dao/BookDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -934,29 +928,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/model/Bookcase.java">
+    <entry file="file://$PROJECT_DIR$/src/database/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="57" column="58" selection-start-line="57" selection-start-column="58" selection-end-line="57" selection-end-column="58" />
+        <state relative-caret-position="1473">
+          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/model/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="637">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/model/BookDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/database/model/Bookcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="682">
+          <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -968,26 +960,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/model/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/database/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+        <state relative-caret-position="572">
+          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/model/Plank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        <state relative-caret-position="373">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/database/model/BookDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="526">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding />
         </state>
       </provider>
